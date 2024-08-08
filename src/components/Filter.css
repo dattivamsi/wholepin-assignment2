@@ -1,0 +1,59 @@
+.filter {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 1rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-closed {
+  transform: translateX(100%);
+}
+
+.filter-open {
+  transform: translateX(0);
+}
+
+.filter h2{
+    padding: 10px 0;
+}
+
+.filter-option label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-option input {
+  width: 70%;
+  margin: 10px 0;
+}
+
+select{
+    width: 70%;
+    padding: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    font-style: italic;
+}
+select option{
+    font-size: 1rem;
+    border-radius: none;
+}
+.filter-inps{
+    padding: 1rem 0;
+}
+.buttons_container{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    height: 3rem;
+}
