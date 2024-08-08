@@ -17,13 +17,16 @@ const ArtifactCard = ({ artifact,gridContainer }) => {
       <img src={artifact?.imageUrl} alt={artifact?.title} 
     //   style={{ backgroundColor: backgroundColor }}
       />
+      <div>
+
       <div className="artifact-title">
         <h3>{artifact.title}</h3>
         <p>{artifact.period}</p>
       </div>
       
       <p className="description">{description}</p>
-      {/* <p>{artifact.region}</p> */}
+      </div>
+      <div></div>
     </div>
   );
 };
