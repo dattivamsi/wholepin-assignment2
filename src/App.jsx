@@ -20,7 +20,7 @@ const App = () => {
   
   const filteredArtifacts = Data?.filter((artifact) => {
     const periodData = parseInt(artifact.period, 10);
-    const titleMatch = (artifact?.title?.toLowerCase().includes(filter?.searchTerm?.toLowerCase())||(artifact?.description?.toLowerCase().includes(filter?.searchTerm?.toLowerCase())));
+    const titleMatch = (artifact?.title?.toLowerCase().includes(filter?.searchTerm?.toLowerCase()));
     const yearMatch = !isNaN(periodData) && periodData >= filter.startYear && periodData <= filter.endYear;
     const materialMatch = artifact?.material?.toLowerCase().includes(filter?.material.toLowerCase());
     const dynastyMatch = artifact?.density?.toLowerCase().includes(filter?.dynasty.toLowerCase());
