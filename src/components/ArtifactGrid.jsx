@@ -7,12 +7,12 @@ import { CiGrid2H } from "react-icons/ci";
 const ArtifactGrid = ({ artifacts }) => {
   const [gridContainer, setGridContainer] = useState("grid");
 
-  const handleButton = (data) =>{
-    setGridContainer(data)
-  }
+  const handleButton = (data) => {
+    setGridContainer(data);
+  };
 
   console.log(gridContainer);
-  
+
   return (
     <>
       <div className="idols-container">
@@ -29,9 +29,15 @@ const ArtifactGrid = ({ artifacts }) => {
             gridContainer === "grid" ? "artifact-grid" : "artifact-flat"
           }
         >
-          {artifacts.map((artifact) => (
-            <ArtifactCard key={artifact.id} artifact={artifact} gridContainer = {gridContainer}/>
-          ))}
+          {artifacts?.length
+            ? artifacts.map((artifact) => (
+                <ArtifactCard
+                  key={artifact.id}
+                  artifact={artifact}
+                  gridContainer={gridContainer}
+                />
+              ))
+            : "There is No Data with your filters"}
         </div>
       </div>
     </>
