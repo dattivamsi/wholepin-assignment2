@@ -17,10 +17,10 @@ const ArtifactGrid = ({ artifacts }) => {
     <>
       <div className="idols-container">
         <div className="idol-buttons">
-          <button onClick={() => handleButton("flat")}>
+          <button onClick={() => handleButton("flat")} className={gridContainer === "flat" ? "button-back":""}>
             <CiGrid2H />
           </button>
-          <button onClick={() => handleButton("grid")}>
+          <button onClick={() => handleButton("grid")} className={gridContainer === "grid" ? "button-back":""}>
             <IoGrid />
           </button>
         </div>

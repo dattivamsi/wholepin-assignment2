@@ -5,6 +5,9 @@
     width: 100%;
     
   }
+  .button-back{
+    background-color: beige;
+  }
   
   @media (max-width: 768px) {
     .artifact-grid {
