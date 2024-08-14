@@ -27,38 +27,87 @@
   display: flex;
   justify-content: space-between;
 }
-.artifact-card img{
-    height: 13rem;
-    width: 10rem;
-    background-color: #333;
+.artifact-card img {
+  height: 13rem;
+  width: 10rem;
+  background-color: #333;
 }
-.artifact-card .description{
-    text-align: start;   
+.artifact-card .description {
+  text-align: start;
 }
 
-.artifact-flat-card{
-    display: flex;
-    background-color: white;
-    border: 1px solid #ddd;
+.artifact-flat-card {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
   justify-content: space-between;
 }
 
-.artifact-flat-card img{
-    height: 3rem;
-    width: 3rem;
+.artifact-flat-card img {
+  height: 3rem;
+  width: 3rem;
 }
 
-@media screen and (min-width:350px) and (max-width:768px) {
-  .artifact-card img{
+@media screen and (min-width: 350px) and (max-width: 768px) {
+  .artifact-card img {
     height: 11rem;
     width: 7rem;
   }
   /* .artifact-card p{
     font-size: 2rem;
   } */
-   .period{
+  .period {
     font-size: 0.8rem;
-   }
+  }
+  .artifact-flat-card img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .dummy {
+    display: none;
+  }
+  .artifact-flat-card{
+    gap: 4rem;
+  }
+  .response-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .response-grid{
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width:450px) and (max-width:600px) {
+  .artifact-flat-card{
+    gap: 3rem;
+  }
+  .artifact-flat-card h3{
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .artifact-flat-card img{
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width:350px) and (max-width:449px){
+  .artifact-flat-card h3{
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .artifact-flat-card img{
+    height: 9rem;
+    width: 6rem;
+  }
+  .artifact-flat-card{
+    gap: 2rem;
+  }
 }
