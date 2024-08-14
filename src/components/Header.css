@@ -18,3 +18,27 @@
     height: 3rem;
     align-items: center;
 }
+
+@media screen and (min-width:350px) and (max-width:768px) {
+  .header_container{
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .header{
+    width: 100%;
+  }
+  .header input{
+    width: 50%;
+  }
+  .header button{
+    width: 50%;
+  }
+  
+  .surprise{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+  }
+}
+

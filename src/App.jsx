@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Filter from './components/Filter';
 import ArtifactGrid from './components/ArtifactGrid';
@@ -14,7 +14,8 @@ const App = () => {
     endYear: 1700,
     material: '',
     dynasty: '',
-    region: ''
+    region: '',
+    // priceRange: [0, 1700]
   });
 
   
@@ -30,6 +31,19 @@ const App = () => {
   });
 
   console.log(filteredArtifacts)
+
+  const handleClickOutside = (event) => {
+    if (!event.target.closest('.filter')) {
+        setShowFilter(false);
+    }
+};
+
+useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, []);
 
   return (
     <div className="app">

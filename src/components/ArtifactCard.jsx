@@ -21,7 +21,7 @@ const ArtifactCard = ({ artifact,gridContainer }) => {
 
       <div className="artifact-title">
         <h3>{artifact.title}</h3>
-        <p>{artifact.period}</p>
+        <p className="period">{artifact.period}</p>
       </div>
       
       <p className="description">{description}</p>

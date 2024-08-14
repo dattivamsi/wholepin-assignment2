@@ -49,3 +49,16 @@
     height: 3rem;
     width: 3rem;
 }
+
+@media screen and (min-width:350px) and (max-width:768px) {
+  .artifact-card img{
+    height: 11rem;
+    width: 7rem;
+  }
+  /* .artifact-card p{
+    font-size: 2rem;
+  } */
+   .period{
+    font-size: 0.8rem;
+   }
+}

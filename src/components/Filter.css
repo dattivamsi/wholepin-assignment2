@@ -57,3 +57,26 @@ select option{
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
     height: 3rem;
 }
+
+@media screen and (min-width:350px) and (max-width:768px){
+  .filter{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+  .filter{
+    width: 55%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+  .filter{
+    width: 75%;
+  }
+}
+@media screen and (min-width:350px) and (max-width:600px) {
+  .filter{
+    width: 95%;
+  }
+}

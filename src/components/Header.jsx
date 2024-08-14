@@ -25,7 +25,7 @@ const Header = ({setSearchTerm,setShowFilter,showFilter}) => {
           Filters
         </button>
       </div>
-      <div>
+      <div className="surprise">
         <button>suprprise Me</button>
       </div>
     </div>
